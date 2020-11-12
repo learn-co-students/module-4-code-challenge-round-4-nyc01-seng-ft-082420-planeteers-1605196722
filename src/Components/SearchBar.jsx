@@ -2,11 +2,13 @@ import React from 'react';
 
 class SearchBar extends React.Component {
 
+
   render() {
     return (
-      <div className="search">
-      </div>
-    );
+      <form>
+        <input placeholder="Search" value={this.props.searchValue} onChange={this.props.searchHandler}/>
+      </form>
+    )
   }
 
 }
